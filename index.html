@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मुखपृष्ठ | महाराष्ट्र नवनिर्माण सेना</title>
+    <meta name="description" content="महाराष्ट्र नवनिर्माण सेना के आधिकारिक मुखपृष्ठ पर आपका स्वागत है।">
+    <meta name="keywords" content="महाराष्ट्र, राजनीति, नवनिर्माण सेना, राज ठाकरे">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="Images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/mns-flag.jpg" alt="महाराष्ट्र नवनिर्माण सेना का लोगो" class="header-logo">
+                <span class="header-title">महाराष्ट्र नवनिर्माण सेना</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="banner" id="home">
+            <!-- Banner content can go here -->
+        </section>
+
+        <section class="scrollable-images">
+            <h2 class="section-headline">
+                <span class="headline-decorator"></span> पेपर प्रिंट <span class="headline-decorator"></span>
+            </h2>
+            <hr>
+            <img src="Images/paper_print/3.jpg" alt="Image 3" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/4.jpg" alt="Image 4" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/5.jpg" alt="Image 5" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/6.jpg" alt="Image 6" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/7.jpg" alt="Image 7" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/8.jpg" alt="Image 8" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/9.jpg" alt="Image 9" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/10.jpg" alt="Image 10" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/11.jpg" alt="Image 11" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/12.jpg" alt="Image 12" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/13.jpg" alt="Image 13" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/14.jpg" alt="Image 14" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/15.jpg" alt="Image 15" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/16.jpg" alt="Image 16" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/17.jpg" alt="Image 17" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/18.jpg" alt="Image 18" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/19.jpg" alt="Image 19" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/20.jpg" alt="Image 20" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/21.jpg" alt="Image 21" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/22.jpg" alt="Image 22" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/23.jpg" alt="Image 23" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/24.jpg" alt="Image 24" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/25.jpg" alt="Image 25" onclick="openModal(this)">
+            <hr>
+            <img src="Images/paper_print/26.jpg" alt="Image 26" onclick="openModal(this)">
+            <hr>
+        </section>
+    </main>
+
+    <!-- Modal for displaying clicked image -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Images/Mns-symbol-railway-engine.png" alt="महाराष्ट्र नवनिर्माण सेना का प्रतीक" class="footer-logo">
+            <p>महाराष्ट्र नव निर्माण सेना, मुख्यालय.</p>
+            <p>योगेश्वर श्री कृष्ण मंदिर, महानुभाव आश्रम नागपूर. 440015.</p>
+            <div class="social-icons">
+                <a href="https://www.google.com"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+            </div>
+            <p>© 2024 सर्व हक्क राखीव. महाराष्ट्र नव निर्माण सेना, मुख्यालय.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(image) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+            document.getElementById("main-content").classList.add("blur-background");
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+            document.getElementById("main-content").classList.remove("blur-background");
+        }
+    </script>
+</body>
+
+</html>
